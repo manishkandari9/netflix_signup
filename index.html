@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In and Sign Up</title>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
-
 <body>
-  <img src="logo.jpg" alt="" class="logo">
+  <img src="logo.jpg" alt="Logo" class="logo">
   <div class="login-form-card">
-    <form action="" class="login-form">
-    <h1>Sign In </h1>
-    <input type="text" name="u" placeholder="Email or Phon Number "><br>
-    <input type="Password"pa name="p" placeholder="password "><br>
-    <button type="submit" class="btn">sign in</button><br>
-    </form>
-    <div class="info">
-      <div class="form-group">
-        <input type="checkbox" name=""nam id="" value="">
-        <span>Remember me</span>
-        
+    <div id="signInForm" class="form-container active">
+      <form action="" class="login-form">
+        <h1>Sign In</h1>
+        <input type="text" class="form" placeholder="Email or Phone Number"><br>
+        <input type="password" class="form" name="p" placeholder="Password"><br>
+        <button type="submit" class="btn">Sign In</button><br>
+      </form>
+      <div class="info">
+        <div class="form-group">
+          <input type="checkbox" name="remember" id="remember" value="remember">
+          <span>Remember me</span>
+        </div>
+        <a href="">Need help</a>
       </div>
-      <a href="">Need help</a>
+      <div class="sign-group">
+        <h4>New to Netflix?</h4>
+        <a href="" id="signUpLink">Sign up now</a>
+      </div>
+      <p>This Page is Protected by Google reCAPTCHA to ensure you are not a bot
+        <a href="">Learn more</a>
+      </p>
+    </div>
 
-      
-      
+    <div id="signUpForm" class="form-container">
+      <form action="" class="login-form">
+        <h1>Sign Up</h1>
+        <input type="text" class="form" placeholder="Username"><br>
+        <input type="email" class="form" placeholder="Email"><br>
+        <input type="password" class="form" name="p" placeholder="Password"><br>
+        <button type="submit" class="btn">Sign Up</button><br>
+      </form>
+      <div class="info">
+        <a href="" id="signInLink">Already have an account? <span class="sign-in">Sign In</span></a>
+      </div>
     </div>
-    <div class="sign-group">
-      <h4>New to Netflix ?</h4>
-      <a href="">Sign up now ?</a>
-      
-      
-    </div>
-    <p>This Page is Protected by Google reCAPTCHA to ensure you are not bot
-    <a href="">learn more</a>
-    </p>
   </div>
+  <script src="/assets/index.js"></script>
 </body>
-
 </html>
